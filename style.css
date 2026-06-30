@@ -1,0 +1,53 @@
+:root {
+    --cor-fundo: #fff0f3;       /* Rosa bem clarinho e suave para o fundo */
+    --cor-principal: #ffffff;   /* Branco para a caixa principal se destacar */
+    --cor-secundaria: #ffb3c1;  /* Rosa pastel para os botões em estado normal */
+    --cor-destaque: #ff4d6d;    /* Vermelho vibrante/cereja para títulos e houver */
+    --cor-texto: #590d22;       /* Vinho escuro para o texto ficar bem legível */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    /* Adiciona uma sombra suave para dar profundidade */
+    box-shadow: 0 10px 25px rgba(255, 77, 109, 0.1); 
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: #ffffff; /* O texto do botão fica branco no hover para contrastar com o vermelho */
+    transform: scale(1.03); /* Dá um leve efeito de crescer ao passar o mouse */
+}
